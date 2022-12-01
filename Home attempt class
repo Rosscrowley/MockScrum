@@ -1,0 +1,73 @@
+// home class
+
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.util.ArrayList;
+
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JRadioButtonMenuItem;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.KeyStroke;
+
+import org.w3c.dom.events.Event;
+
+
+public class home {
+
+	JFrame Home = new JFrame();
+	
+	
+
+	home() {
+	
+         JButton view= new JButton("View Items");
+         JButton add = new JButton("Add items");
+         
+     	JMenuBar menuBar = new JMenuBar();
+		menuBar.add(view);
+		menuBar.add(add);
+		
+		
+         
+         
+          JPanel pnl = new JPanel();
+          
+       
+          
+          
+        Home.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  		Home.setResizable(false);
+  		Home.setVisible(true);
+  		Home.setSize(600, 400);
+  		Home.setLayout(null);
+
+		
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		home h = new home();
+
+	}
+
+	
+
+}
