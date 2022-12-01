@@ -1,0 +1,39 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class NewFrame {
+
+	JFrame NewWindow = new JFrame();
+	
+
+	NewFrame() {
+	
+
+		JButton view= new JButton("View Items");
+        JButton add = new JButton("Add items");
+    	JPanel pnl = new JPanel();
+    	pnl.add(view);
+    	NewWindow.add(pnl);
+		
+		
+		
+		
+		
+		NewWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		NewWindow.setResizable(false);
+		NewWindow.setVisible(true);
+		NewWindow.setSize(600, 400);
+		NewWindow.setLayout(null);
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		NewFrame f = new NewFrame();
+
+	}
+
+	
+	
+}
