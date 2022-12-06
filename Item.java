@@ -39,7 +39,7 @@ public class Item {
 	public String displayItem() {
 		// System.out.println("Student Name: " + this.name + " Address: " +
 		// this.address);
-		return "Item Name: " + name + "  Item Type " + type + "  Expiration Date " + exDate;
+		return "\n\nItem Name: " + name + "\n  Item Type " + type + "\n  Expiration Date " + exDate;
 	}
 
 }
