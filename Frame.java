@@ -1,3 +1,5 @@
+
+
 import java.awt.Component;
 import java.awt.Event;
 import java.awt.event.ActionEvent;
@@ -14,39 +16,34 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JPanel;
 
-import javafx.scene.paint.Color;
 
 public class Frame extends JFrame implements ActionListener {
 
 	JButton home;
-	JButton stock, orders, exit, suppliers, customers;
+	JButton stock, exit, suppliers, admin;
 
 	public Frame() {
 
-		home = new JButton("HOME");
-		customers = new JButton("CUSTOMERS");
+		home = new JButton("HOMdryjue57jE");
+		admin = new JButton("Admin page");
 		suppliers = new JButton("SUPPLIERS");
-		orders = new JButton("ORDERS");
-		stock = new JButton("STOCK");
-		exit = new JButton("EXIT");
+		
 
 		JMenuBar menuBar = new JMenuBar();
 		menuBar.add(home);
-		menuBar.add(customers);
+		menuBar.add(admin);
 		menuBar.add(suppliers);
-		menuBar.add(stock);
-		menuBar.add(orders);
-		menuBar.add(exit);
+		
 
 		home.addActionListener(this);
-		customers.addActionListener(this);
+		admin.addActionListener(this);
 		suppliers.addActionListener(this);
-		orders.addActionListener(this);
-		stock.addActionListener(this);
-		exit.addActionListener(this);
+	
 
 		JPanel pnl = new JPanel();
-
+		pnl.add(menuBar);
+		pnl.setVisible(true);
+		
 		this.setTitle("A Web Page");
 		this.setVisible(true);
 		this.setSize(600, 400);
@@ -58,35 +55,25 @@ public class Frame extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 
-		if (e.getSource() == customers) {
+		if (e.getSource() == admin) {
 
-			// this.dispose();
-			NewFrame frame = new NewFrame();
+	     //ItemFrame itemFrame = new ItemFrame();
+	      home h = new home();
 
 		}
 
 		if (e.getSource() == home) {
 
-			NewFrame frame1 = new NewFrame();
+			
 
 		}
 
 		if (e.getSource() == suppliers) {
 
-			NewFrame frame2 = new NewFrame();
+			//NewFrame frame2 = new NewFrame();
 
 		}
 
-		if (e.getSource() == stock) {
-
-			NewFrame frame3 = new NewFrame();
-
-		}
-		if (e.getSource() == orders) {
-
-			NewFrame frame4 = new NewFrame();
-
-		}
 
 		if (e.getSource() == exit) {
 
