@@ -1,0 +1,89 @@
+package pack;
+
+import java.util.Random;
+
+public class Item {
+
+	private String name;
+	private String type;
+	private String exDate;
+	private int quantity;
+	private double vat;
+	private int id;
+	
+
+	public Item(String n, String t, String eD, int q, double vat, int id) {
+		this.name = n;
+		this.type = t;
+		this.exDate = eD;
+		this.quantity = q;
+		this.vat = vat;
+		this.id = id;
+
+	}
+	public int getID() {
+		return id;
+	}
+
+	public void setID(int id) {
+		this.id = id;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	public double getVat() {
+		return vat;
+	}
+
+	public void setVat(double vat) {
+		this.vat = vat;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getExDate() {
+		return exDate;
+	}
+
+	public void setExDate(String exDate) {
+		this.exDate = exDate;
+	}
+
+	public String displayItem() {
+		// System.out.println("Student Name: " + this.name + " Address: " +
+		// this.address);
+		
+		String strQ = Integer.toString(quantity);
+		String strV = Double.toString(vat);
+		
+		
+		Random rand = new Random();
+	 int rand_id = rand.nextInt(1000);
+		
+		
+		
+		return "\nItem Name: " + name + "\nItem Type: " + type + "\nExpiration Date: " + exDate + 
+				"\nItem quantity: " + strQ + "\nVAT: " + strV +  "\n Unique ID: " + rand_id ;
+	}
+
+}
